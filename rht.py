@@ -445,6 +445,8 @@ try:
                     elif useradet == "clear":
                         os.system("clear")
                     elif useradet == "y":
+                        os.system("clear")
+                        mods.banner()
                         passadet = input("""
 \033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "y" ]
 
@@ -521,6 +523,8 @@ try:
 
                             
                     else:
+                        os.system("clear")
+                        mods.banner()
                         passadet = input("""
 \033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "y" ]
 
@@ -561,10 +565,10 @@ try:
 \033[1;33mYanlış Giriliğinde Gelen Hata Mesajını Giriniz
 
 \033[1;31mrht>\033[1;37m """)
-                            mods.panelbrute(user,passlists,target,userform,passform,failmessage,1,1,paneldizini)
+                            mods.panelbrute(user,passlists,target,userform,passform,failmessage,2,1,paneldizini)
                         else:
                             user = input("""
-\033[1;33mKullanıcı Adı Listesini Giriniz
+\033[1;33mKullanıcı Adını Giriniz
 
 \033[1;31mrht>\033[1;37m """)
                             passlists = input("""
@@ -650,12 +654,14 @@ try:
                         elif passadet == "clear":
                             os.system("clear")
                         elif passadet == "n":
+                            os.system("clear")
+                            mods.banner()
                             user = input("""
 \033[1;33mKullanıcı Adı Listesini Giriniz
 
 \033[1;31mrht>\033[1;37m """)
                             passlists = input("""
-\033[1;33mŞifre Barındıran Wordlistin Yolunu Yazınız
+\033[1;33mŞifreyi Giriniz
 
 \033[1;31mrht>\033[1;37m """)
                             target = input("""
@@ -682,6 +688,8 @@ try:
                             
 
                     else:
+                        os.system("clear")
+                        mods.banner()
                         passadet = input("""
 \033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "y" ]
 
@@ -695,11 +703,11 @@ try:
                             os.system("clear")
                         elif passadet == "n":
                             user = input("""
-\033[1;33mKullanıcı Adı Listesini Giriniz
+\033[1;33mKullanıcı Adını Giriniz
 
 \033[1;31mrht>\033[1;37m """)
                             passlists = input("""
-\033[1;33mŞifre Barındıran Wordlistin Yolunu Yazınız
+\033[1;33mŞifreyi Giriniz
 
 \033[1;31mrht>\033[1;37m """)
                             target = input("""
@@ -711,7 +719,7 @@ try:
 
                         else:
                             user = input("""
-\033[1;33mKullanıcı Adı Listesini Giriniz
+\033[1;33mKullanıcı Adını Giriniz
 
 \033[1;31mrht>\033[1;37m """)
                             passlists = input("""
@@ -742,6 +750,8 @@ try:
                     elif useradet == "exit":
                         sys.exit()
                     elif useradet == "y":
+                        os.system("clear")
+                        mods.banner()
                         passadet = input("""
 \033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "y" ]
 
@@ -759,7 +769,7 @@ try:
 
 \033[1;31mrht>\033[1;37m """)
                             passlists = input("""
-\033[1;33mŞifre Barındıran Wordlistin Yolunu Yazınız
+\033[1;33mŞifreyi Giriniz
 
 \033[1;31mrht>\033[1;37m """)
                             target = input("""
@@ -786,6 +796,8 @@ try:
                             
 
                     else:
+                        os.system("clear")
+                        mods.banner()
                         passadet = input("""
 \033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "y" ]
 
@@ -799,11 +811,11 @@ try:
                             os.system("clear")
                         elif passadet == "n":
                             user = input("""
-\033[1;33mKullanıcı Adı Listesini Giriniz
+\033[1;33mKullanıcı Adını Giriniz
 
 \033[1;31mrht>\033[1;37m """)
                             passlists = input("""
-\033[1;33mŞifre Barındıran Wordlistin Yolunu Yazınız
+\033[1;33mŞifreyi Giriniz
 
 \033[1;31mrht>\033[1;37m """)
                             target = input("""
@@ -815,8 +827,7 @@ try:
 
                         else:
                             user = input("""
-\033[1;33mKullanıcı Adı Listesini Giriniz
-
+\033[1;33mKullanıcı Adını Giriniz
 \033[1;31mrht>\033[1;37m """)
                             passlists = input("""
 \033[1;33mŞifre Barındıran Wordlistin Yolunu Yazınız
@@ -844,6 +855,8 @@ try:
                     elif passadet == "clear":
                         os.system("clear")
                     elif passadet == "n":
+                        os.system("clear")
+                        mods.banner()
                         target = input("""
 \033[1;33mHedef RDP Serveri Giriniz
 
@@ -861,6 +874,41 @@ try:
                     
                     
                     else:
+                        os.system("clear")
+                        mods.banner()
+                        target = input("""
+\033[1;33mHedef RDP Serveri Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                        port = input("""
+\033[1;33mHedef RDP Serverin Portunu Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                        wordlist = input("""
+\033[1;33mŞifreyi Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                        mods.rdpatak(wordlist,port,target,2)
+                    
+
+                elif b == "5":
+                    os.system("clear")
+                    mods.banner()
+
+                    passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "y" ]
+
+\033[1;31mrht>\033[1;37m """)
+                    if passadet == "home":
+                        os.system("clear")
+                        count3+=1
+                    elif passadet == "exit":
+                        sys.exit()
+                    elif passadet == "clear":
+                        os.system("clear")
+                    elif passadet == "n":
+                        os.system("clear")
+                        mods.banner()
                         target = input("""
 \033[1;33mHedef RDP Serveri Giriniz
 
@@ -873,27 +921,840 @@ try:
 \033[1;33mŞifreyi Giriniz
 
 \033[1;31mrht>\033[1;37m """)
-                        mods.rdpatak(wordlist,port,target,2)
+                        mods.vncatak(wordlist,port,target,1)
+                    
+                    
+                    
+                    else:
+                        os.system("clear")
+                        mods.banner()
+                        target = input("""
+\033[1;33mHedef RDP Serveri Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                        port = input("""
+\033[1;33mHedef RDP Serverin Portunu Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                        wordlist = input("""
+\033[1;33mŞifre Lİstesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                        mods.vncatak(wordlist,port,target,2)
+                #Telnet Atak
+                elif b == "6":
+                    os.system("clear")
+                    mods.banner()
+                   
+
+                    useradet = input("""
+\033[1;33mUser Sayısı birden fazla mı?(y/n) [varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                    if useradet == "home":
+                        os.system("clear")
+                        count3+=1
+                    elif useradet == "exit":
+                        sys.exit()
+                    elif useradet == "clear":
+                        os.system("clear")
+                    elif useradet == "y":
+                        passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "y" ]
+
+\033[1;31mrht>\033[1;37m """)
+                        if passadet == "home":
+                            os.system("clear")
+                            count3+=1
+                        elif passadet == "clear":
+                            os.system("clear")
+                        elif passadet == "exit":
+                            sys.exit()
+                        elif passadet == "n":
+                            os.system("clear")
+                            mods.banner()
+                            target = input("""
+\033[1;33mTelnet Serverin Hedefini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            port = input("""
+\033[1;33mTelnet Serverin Portu Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            username = input("""
+\033[1;33mUsername Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            password = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            mods.telnetatak(username,password,port,target,2,1)
+
+
+
+                        else:
+                            target = input("""
+\033[1;33mTelnet Serverin Hedefini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            port = input("""
+\033[1;33mTelnet Serverin Portu Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            username = input("""
+\033[1;33mUsername Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            password = input("""
+\033[1;33mŞifre Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            mods.telnetatak(username,password,port,target,2,2)
+
+
+
+                    else:
+                        os.system("clear")
+                        mods.banner()
+                        passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "y" ]
+
+\033[1;31mrht>\033[1;37m """)
+                        if passadet == "home":
+                            os.system("clear")
+                            count3+=1
+                        elif passadet == "clear":
+                            os.system("clear")
+                        elif passadet == "exit":
+                            sys.exit()
+                        elif passadet == "n":
+                            target = input("""
+\033[1;33mTelnet Serverin Hedefini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            port = input("""
+\033[1;33mTelnet Serverin Portu Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            username = input("""
+\033[1;33mUsernameyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            password = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            mods.telnetatak(username,password,port,target,1,1)
+
+
+
+                        else:
+                            target = input("""
+\033[1;33mTelnet Serverin Hedefini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            port = input("""
+\033[1;33mTelnet Serverin Portu Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            username = input("""
+\033[1;33mUsernameyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            password = input("""
+\033[1;33mŞifre Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            mods.telnetatak(username,password,port,target,1,2)
+
+                        
+                        
+
+
+
+
+                        
+                #Http Basic Brute Force
+                elif b == "7":
+                    os.system("clear")
+                    mods.banner()
+                   
+
+                    useradet = input("""
+\033[1;33mUser Sayısı birden fazla mı?(y/n) [varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                    if useradet == "home":
+                        os.system("clear")
+                        count3+=1
+                    elif useradet == "clear":
+                        os.system("clear")
+                    elif useradet == "exit":
+                        sys.exit()
+                    elif useradet == "y":
+                        os.system("clear")
+                        mods.banner()
+                        passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "y" ]
+
+\033[1;31mrht>\033[1;37m """)
+                        if passadet == "n":
+                            target = input("""
+\033[1;33mHedef Linki Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            username = input("""
+\033[1;33mUsername Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            password = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            mods.basicauth(username,password,target,2,1)
+                        else:
+                            target = input("""
+\033[1;33mHedef Linki Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            username = input("""
+\033[1;33mUsername Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            password = input("""
+\033[1;33mŞifre Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            mods.basicauth(username,password,target,2,2)
+
+                    else:
+
+                        os.system("clear")
+                        mods.banner()
+                        passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "y" ]
+
+\033[1;31mrht>\033[1;37m """)
+                        if passadet == "n":
+                            target = input("""
+\033[1;33mHedef Linki Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            username = input("""
+\033[1;33mUsernameyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            password = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            mods.basicauth(username,password,target,1,1)
+                        else:
+                            target = input("""
+\033[1;33mHedef Linki Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            username = input("""
+\033[1;33mUsernameyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            password = input("""
+\033[1;33mŞifre Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            mods.basicauth(username,password,target,1,2)
+                        
+                        
+                        
+
                     
 
-                elif b == "5":
-                    pass
-                elif b == "6":
-                    pass
-                elif b == "7":
-                    pass
+
+
                 elif b == "8":
-                    pass
+                        os.system("clear")
+                        mods.banner()
+                        passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "y" ]
+
+\033[1;31mrht>\033[1;37m """)
+                        if passadet == "home":
+                            os.system("clear")
+                            count3+=1
+                        elif passadet == "clear":
+                            os.system("clear")
+                        elif passadet == "exit":
+                            sys.exit()
+                        elif passadet == "n":
+                            target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            port = input("""
+\033[1;33mPortu Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            password = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            mods.firewallbrute(password,target,1,port)
+                        else:
+                            target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            port = input("""
+\033[1;33mPortu Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            password = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                            mods.firewallbrute(password,target,2,port)
+
                 elif b == "9":
-                    pass
+                        os.system("clear")
+                        mods.banner()
+                        useradet = input("""
+\033[1;33mEğer Kullanıcı Adı Denemeniz Birden Fazla Olcaksa y'ye basın ama tek olacaksa n'ye basın [Varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                        if useradet == "home":
+                            os.system("clear")
+                            count3+=1
+                        elif useradet == "exit":
+                            sys.exit()
+                        elif useradet == "clear":
+                            os.system("clear")
+                        elif useradet == "y":
+                            os.system("clear")
+                            mods.banner()
+
+                            passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                            if passadet == "home":
+                                os.system("clear")
+                                count3+=1
+                            elif passadet == "exit":
+                                sys.exit()
+                            elif passadet == "clear":
+                                os.system("clear")
+                            elif passadet == "n":
+                                user = input("""
+\033[1;33mUser name Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.firewallbrutepass(user,pasword,target,2,1)
+                            else:
+                                user = input("""
+\033[1;33mUser name Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifre Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.firewallbrutepass(user,pasword,target,2,2)
+
+                
+                        else:
+                            os.system("clear")
+                            mods.banner()
+
+                            passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                            if passadet == "home":
+                                os.system("clear")
+                                count3+=1
+                            elif passadet == "exit":
+                                sys.exit()
+                            elif passadet == "clear":
+                                os.system("clear")
+                            elif passadet == "n":
+                                user = input("""
+\033[1;33mUsernameyi Giriniz
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.firewallbrutepass(user,pasword,target,1,1)
+                            else:
+                                user = input("""
+\033[1;33mUsernameyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifre Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.firewallbrutepass(user,pasword,target,1,2)
+
+
+
+
+
                 elif b == "10":
-                    pass
+                        os.system("clear")
+                        mods.banner()
+                        useradet = input("""
+\033[1;33mEğer Kullanıcı Adı Denemeniz Birden Fazla Olcaksa y'ye basın ama tek olacaksa n'ye basın [Varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                        if useradet == "home":
+                            os.system("clear")
+                            count3+=1
+                        elif useradet == "exit":
+                            sys.exit()
+                        elif useradet == "clear":
+                            os.system("clear")
+                        elif useradet == "y":
+                            os.system("clear")
+                            mods.banner()
+
+                            passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                            if passadet == "home":
+                                os.system("clear")
+                                count3+=1
+                            elif passadet == "exit":
+                                sys.exit()
+                            elif passadet == "clear":
+                                os.system("clear")
+                            elif passadet == "n":
+                                user = input("""
+\033[1;33mUser name Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.smbatak(user,pasword,target,2,1)
+                            else:
+                                user = input("""
+\033[1;33mUser name Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifre Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.smbatak(user,pasword,target,2,2)
+
+                
+                        else:
+                            os.system("clear")
+                            mods.banner()
+
+                            passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                            if passadet == "home":
+                                os.system("clear")
+                                count3+=1
+                            elif passadet == "exit":
+                                sys.exit()
+                            elif passadet == "clear":
+                                os.system("clear")
+                            elif passadet == "n":
+                                user = input("""
+\033[1;33mUsernameyi Giriniz
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.smbatak(user,pasword,target,1,1)
+                            else:
+                                user = input("""
+\033[1;33mUsernameyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifre Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.smbatak(user,pasword,target,1,2)
+                    
+
+
+
+
+
                 elif b == "11":
-                    pass
+                        os.system("clear")
+                        mods.banner()
+                        useradet = input("""
+\033[1;33mEğer Kullanıcı Adı Denemeniz Birden Fazla Olcaksa y'ye basın ama tek olacaksa n'ye basın [Varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                        if useradet == "home":
+                            os.system("clear")
+                            count3+=1
+                        elif useradet == "exit":
+                            sys.exit()
+                        elif useradet == "clear":
+                            os.system("clear")
+                        elif useradet == "y":
+                            os.system("clear")
+                            mods.banner()
+
+                            passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                            if passadet == "home":
+                                os.system("clear")
+                                count3+=1
+                            elif passadet == "exit":
+                                sys.exit()
+                            elif passadet == "clear":
+                                os.system("clear")
+                            elif passadet == "n":
+                                user = input("""
+\033[1;33mUser name Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.snmpbrute(user,pasword,target,2,1)
+                            else:
+                                user = input("""
+\033[1;33mUser name Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifre Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.snmpbrute(user,pasword,target,2,2)
+
+                
+                        else:
+                            os.system("clear")
+                            mods.banner()
+
+                            passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                            if passadet == "home":
+                                os.system("clear")
+                                count3+=1
+                            elif passadet == "exit":
+                                sys.exit()
+                            elif passadet == "clear":
+                                os.system("clear")
+                            elif passadet == "n":
+                                user = input("""
+\033[1;33mUsernameyi Giriniz
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.snmpbrute(user,pasword,target,1,1)
+                            else:
+                                user = input("""
+\033[1;33mUsernameyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifre Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.snmpbrute(user,pasword,target,1,2)
+                    
+
+
+
+
+
                 elif b == "12":
-                    pass
+                        os.system("clear")
+                        mods.banner()
+                        useradet = input("""
+\033[1;33mEğer Kullanıcı Adı Denemeniz Birden Fazla Olcaksa y'ye basın ama tek olacaksa n'ye basın [Varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                        if useradet == "home":
+                            os.system("clear")
+                            count3+=1
+                        elif useradet == "exit":
+                            sys.exit()
+                        elif useradet == "clear":
+                            os.system("clear")
+                        elif useradet == "y":
+                            os.system("clear")
+                            mods.banner()
+
+                            passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                            if passadet == "home":
+                                os.system("clear")
+                                count3+=1
+                            elif passadet == "exit":
+                                sys.exit()
+                            elif passadet == "clear":
+                                os.system("clear")
+                            elif passadet == "n":
+                                user = input("""
+\033[1;33mUser name Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.snmpencode(user,pasword,target,2,1)
+                            else:
+                                user = input("""
+\033[1;33mUser name Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifre Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.snmpencode(user,pasword,target,2,2)
+
+                
+                        else:
+                            os.system("clear")
+                            mods.banner()
+
+                            passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                            if passadet == "home":
+                                os.system("clear")
+                                count3+=1
+                            elif passadet == "exit":
+                                sys.exit()
+                            elif passadet == "clear":
+                                os.system("clear")
+                            elif passadet == "n":
+                                user = input("""
+\033[1;33mUsernameyi Giriniz
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.snmpencode(user,pasword,target,1,1)
+                            else:
+                                user = input("""
+\033[1;33mUsernameyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifre Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.snmpencode(user,pasword,target,1,2)
+                    
+
+
+
+
+
+
+
+
                 elif b == "13":
-                    pass
+                        os.system("clear")
+                        mods.banner()
+                        useradet = input("""
+\033[1;33mEğer Kullanıcı Adı Denemeniz Birden Fazla Olcaksa y'ye basın ama tek olacaksa n'ye basın [Varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                        if useradet == "home":
+                            os.system("clear")
+                            count3+=1
+                        elif useradet == "exit":
+                            sys.exit()
+                        elif useradet == "clear":
+                            os.system("clear")
+                        elif useradet == "y":
+                            os.system("clear")
+                            mods.banner()
+
+                            passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                            if passadet == "home":
+                                os.system("clear")
+                                count3+=1
+                            elif passadet == "exit":
+                                sys.exit()
+                            elif passadet == "clear":
+                                os.system("clear")
+                            elif passadet == "n":
+                                user = input("""
+\033[1;33mUser name Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.imapbrute(user,pasword,target,2,1)
+                            else:
+                                user = input("""
+\033[1;33mUser name Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifre Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.imapbrute(user,pasword,target,2,2)
+
+                
+                        else:
+                            os.system("clear")
+                            mods.banner()
+
+                            passadet = input("""
+\033[1;33mŞifre Sayısı birden fazla mı?(y/n) [varsayılan : "n" ]
+
+\033[1;31mrht>\033[1;37m """)
+                            if passadet == "home":
+                                os.system("clear")
+                                count3+=1
+                            elif passadet == "exit":
+                                sys.exit()
+                            elif passadet == "clear":
+                                os.system("clear")
+                            elif passadet == "n":
+                                user = input("""
+\033[1;33mUsernameyi Giriniz
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifreyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.imapbrute(user,pasword,target,1,1)
+                            else:
+                                user = input("""
+\033[1;33mUsernameyi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                pasword = input("""
+\033[1;33mŞifre Listesini Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                target = input("""
+\033[1;33mHedefi Giriniz
+
+\033[1;31mrht>\033[1;37m """)
+                                mods.imapbrute(user,pasword,target,1,2)
+                    
+
+
+
+
+
+
+
+
                 else:
                     print("Geçersiz Argüman")
                 
@@ -1322,49 +2183,7 @@ try:
             print("Geçersiz Seçim")
             bekle.sleep(2)
             os.system("clear")
-                        
-                    
-
-
-
-                        
-
-
-                                                
-
-
-                            
-                            
-                                
-                            
-
-            
-
-
-            
-
-
-        
-
-
-
-
-
-        
-
-
-                    
-
-
-
-
-                    
-
-
-
-
-
-
+                                            
 except KeyboardInterrupt:
     print("""
 Görüşmek üzere""")

