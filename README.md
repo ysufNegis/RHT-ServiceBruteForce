@@ -1,5 +1,5 @@
 # RedhackAze-Kali-Linux-Interface
-Bu aracın amacı sizlerin daha rahat bir şekilde brute araçlarını daha iyi kullanmanızı amaçalr. Has advanced brute features yani hem kod yazmıycack hem de profesyonel bir şekilde kullancaksınız.
+Bu aracın amacı sizlerin daha rahat bir şekilde brute araçlarını daha iyi kullanmanızı amaçlar yani hem kod yazmıycack hem de profesyonel bir şekilde kullancaksınız.
 # Test Edilen Sürümler
 - Linux
 - Kali
