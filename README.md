@@ -1,11 +1,13 @@
 # RedhackAze-Kali-Linux-Interface
-The purpose of the application is to facilitate you brute vehicles. Has advanced brute features. It has advanced brute force features but made easy.
-# Support OS
+Bu aracın amacı sizlerin daha rahat bir şekilde brute araçlarını daha iyi kullanmanızı amaçalr. Has advanced brute features yani hem kod yazmıycack hem de profesyonel bir şekilde kullancaksınız.
+# Test Edilen Sürümler
 - Linux
 - Kali
 - Parrot OS
-# What should you have
-You must have got that tools: Hydra, JohnTheRipper, Crunch, Cewl, Medusa and python3
-# How to using the tool
+# Neler sahip olmalıyım
+Hydra, JohnTheRipper, Medusa, cewl, Crunch ve python 3 desteklemelidir
+# Nasıl Kullanılır
 - python3 rht.py
+# Web Sitemiz
+https://redhackaze.org/forum/
     
