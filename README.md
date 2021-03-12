@@ -7,7 +7,7 @@ Bu aracın amacı sizlerin daha rahat bir şekilde brute araçlarını daha iyi 
 # Neler sahip olmalıyım
 Hydra, JohnTheRipper, Medusa, cewl, Crunch ve python 3 desteklemelidir
 # Screenshots
-![Screenshot](https://github.com/ysufNegis/Easy-Vuln-Finder-For-Windows-Users...-Developed-Yet/blob/main/bvc.PNG)
+![Screenshot](https://github.com/ysufNegis/RHT-ServiceBruteForce/blob/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC_2021-03-09_23-02-22.png)
 # Nasıl Kullanılır
 - python3 rht.py
 # Web Sitemiz
